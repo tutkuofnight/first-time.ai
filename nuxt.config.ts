@@ -7,7 +7,9 @@ export default defineNuxtConfig({
     apiSecretKey: process.env.OPENROUTER_API_KEY,
     modelName: process.env.MODEL_NAME,
     apiUrl: process.env.API_URL,
-    visitRules: process.env.VISIT_RULES
+    visitRules: process.env.VISIT_RULES,
+    supabaseUrl: process.env.SUPABASE_URL,
+    supabaseKey: process.env.SUPABASE_KEY
   },
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
