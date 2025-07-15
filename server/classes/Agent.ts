@@ -43,15 +43,15 @@ class AIAgent {
       return error
     }
     
-    const { error: dbError } = await supabase
-      .from('questions')
-      .insert([
-        { question: question, answer: data },
-      ])
+    // const { error: dbError } = await supabase
+    //   .from('questions')
+    //   .insert([
+    //     { question: question, answer: data },
+    //   ])
 
-    if (dbError) {
-      console.log(dbError)
-    }
+    // if (dbError) {
+    //   console.log(dbError)
+    // }
 
     return data!
   }

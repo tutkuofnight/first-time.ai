@@ -6,9 +6,13 @@ body {
 }
 
 button {
-  cursor: pointer;
+  @apply cursor-pointer rounded-xl
 }
 
-.md ul:first-child li strong {
+button:disabled {
+  @apply cursor-not-allowed opacity-50
+}
+
+.md ul:first-child li p strong {
   @apply my-4
 }
