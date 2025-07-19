@@ -75,7 +75,7 @@ const sendRequest = async () => {
       <Tab :tabs="items" @current-tab="setCurrentTab" />
     </Motion>
   </section>
-  <div class="py-5 w-full max-w-[600px] mx-auto -mt-[310px] mb-[150px] md:px-1">
+  <div class="px-5 md:px-0 py-5 w-full max-w-[600px] mx-auto -mt-[310px] mb-[150px] md:px-1">
     <div class="grid gap-2 px-5 md:px-0" v-if="pending">
       <USkeleton class="h-4 w-[350px]" />
       <USkeleton class="h-4 w-[300px]" />
