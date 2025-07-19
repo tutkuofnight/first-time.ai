@@ -13,6 +13,6 @@ button:disabled {
   @apply cursor-not-allowed opacity-50
 }
 
-.md ul:first-child li p strong {
-  @apply my-4
+.md {
+  @apply 
 }

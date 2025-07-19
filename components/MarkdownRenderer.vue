@@ -8,7 +8,3 @@ const { markdown } = defineProps<{
 <template v-if="markdown">
   <div v-html="marked.parse(markdown)" class="md"></div>
 </template>
-
-<style scoped>
-
-</style>
