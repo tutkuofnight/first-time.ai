@@ -65,6 +65,15 @@ class AIAgent {
     }
     return data!
   }
+  async guide(message: string, lang: string): Promise<string> {
+    const question = `I have ${message} and i don't know what can i do with it. Answer as ${lang}.\n`
+    const { data, error } = await this.repository(question)
+
+    if (error) {
+      return error
+    }
+    return data!
+  }
 }
 
 export default AIAgent

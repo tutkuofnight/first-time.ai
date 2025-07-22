@@ -5,17 +5,20 @@ const items: TabsItem[] = [
   {
     label: 'Seyehat ve Gezi',
     icon: 'i-lucide-tent-tree',
-    placeholder: 'Nereyi ziyaret etmeyi düşünüyorsunuz?'
+    placeholder: 'Nereyi ziyaret etmeyi düşünüyorsunuz?',
+    type: 'visit'
   },
   {
     label: 'Kullanım Rehberi',
     icon: 'i-lucide-book-open',
-    placeholder: 'Neyi ilk kez kullanmaya çalışıyorsunuz?'
+    placeholder: 'Neyi ilk kez kullanmaya çalışıyorsunuz?',
+    type: 'use'
   },
   {
     label: 'Nasıl Yapılır?',
     icon: 'i-lucide-message-circle-question-mark',
-    placeholder: 'Neyin nasıl yapılacağını merak ediyorsunuz?'
+    placeholder: 'Neyin nasıl yapılacağını merak ediyorsunuz?',
+    type: 'guide'
   }
 ]
 
@@ -37,7 +40,7 @@ const sendRequest = async () => {
     body: {
       name: name.value,
       lang: navigator.language,
-      type: 'visit'
+      type: currentTab.value.type
     },
  })
  pending.value = isLoading.value

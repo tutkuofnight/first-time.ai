@@ -5,7 +5,7 @@ const agent = new AIAgent()
 type ReqProps = {
   name: string
   lang?: string
-  type : 'visit' | 'use'
+  type : 'visit' | 'use' | 'guide'
 }
 
 export default defineEventHandler(async (event) => {
@@ -20,6 +20,10 @@ export default defineEventHandler(async (event) => {
       break
     case 'use':
       response = await agent.use(body.name, lang)
+      break
+    case 'guide':
+      response = await agent.guide(body.name, lang)
+      break
   }
 
   return response
