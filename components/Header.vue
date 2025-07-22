@@ -4,7 +4,7 @@
 
 <template>
   <header class="flex items-center justify-between p-5">
-    <h1 class="text-emerald-400 text-xl font-mono">first-time.ai</h1>
+    <h1 class="text-green-400 text-xl font-mono">first-time.ai</h1>
     <div class="flex items-center gap-2">
       <UButton variant="subtle" class="h-8">
         <UIcon name="fa:github" />
