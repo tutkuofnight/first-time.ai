@@ -1,5 +1,5 @@
 # first-time.ai
-🥷 An AI supported app that you can use to learn first time doing something.
+🥷 An AI supported app that you can use to learn first time doing something. You can learn places you visit, an item you will use, a job you have to done and more!
 
 ## Stack
 - Nuxtjs 
